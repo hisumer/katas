@@ -5,6 +5,9 @@ export function getFizzbuzz(number) {
             case (index % 3 == 0):
                 message.push('fizz')
                 break;
+            case (index % 5 == 0):
+                message.push('buzz')
+                break;
             default:
                 message.push(index)
         }
