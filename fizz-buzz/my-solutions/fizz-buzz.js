@@ -1,20 +1,20 @@
 export function getFizzbuzz(number) {
-    let message = []
+    let list = []
     for (let index = 1; index <= number; index++) {
         switch (true) {
             case (index % 3 == 0 && index % 5 == 0):
-                message.push('fizzbuzz')
+                list.push('fizzbuzz')
                 break;
             case (index % 3 == 0):
-                message.push('fizz')
+                list.push('fizz')
                 break;
             case (index % 5 == 0):
-                message.push('buzz')
+                list.push('buzz')
                 break;
             default:
-                message.push(index)
+                list.push(index)
         }
     }
 
-    return message;
+    return list;
 }
