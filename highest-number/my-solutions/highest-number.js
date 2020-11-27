@@ -14,7 +14,5 @@ export function getHighestNumber(listNumbers) {
     // })
 
     // reduce get Max no arrow
-    const highest = listNumbers.reduce((prev, current) => (prev > current) ? prev : current)
-
-    return highest
+    return listNumbers.reduce((prev, current) => (prev > current) ? prev : current)
 }
