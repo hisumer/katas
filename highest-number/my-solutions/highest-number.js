@@ -9,9 +9,12 @@ export function getHighestNumber(listNumbers) {
     // })
 
     // reduce get Max
-    const highest = listNumbers.reduce((prev, current) => {
-        return (prev > current) ? prev : current
-    })
+    // const highest = listNumbers.reduce((prev, current) => {
+    //     return (prev > current) ? prev : current
+    // })
+
+    // reduce get Max no arrow
+    const highest = listNumbers.reduce((prev, current) => (prev > current) ? prev : current)
 
     return highest
 }
